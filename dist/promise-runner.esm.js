@@ -303,4 +303,5 @@ _defineProperty(Runner, "PROGRESS", 'progress');
 
 _defineProperty(Runner, "FINISHED", 'finished');
 
+export default Runner;
 export { Runner };

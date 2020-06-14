@@ -179,3 +179,5 @@ export class Runner<T> {
     );
   }
 }
+
+export default Runner;
