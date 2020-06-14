@@ -1,0 +1,27 @@
+{
+  "name": "promise-queue-runner",
+  "version": "1.0.0",
+  "description": "A pure JavaScript module with no dependencies, that aims to parallelly run promise list with max concurrency by a run queue.",
+  "main": "dist/runner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlyzeng/promise-queue-runner.git"
+  },
+  "keywords": [
+    "promise",
+    "queue",
+    "runner",
+    "run",
+    "concurrency",
+    "maxConcurrency"
+  ],
+  "author": "charlyzeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlyzeng/promise-queue-runner/issues"
+  },
+  "homepage": "https://github.com/charlyzeng/promise-queue-runner#readme"
+}
