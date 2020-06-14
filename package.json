@@ -1,11 +1,17 @@
 {
   "name": "promise-queue-runner",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A pure JavaScript module with no dependencies, that aims to parallelly run promise list with max concurrency by a run queue.",
-  "main": "dist/runner.js",
+  "main": "dist/promise-runner.js",
+  "module": "dist/promise-runner.esm.js",
+  "files": [
+    "lib/*",
+    "dist/*"
+  ],
   "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.ts",
-    "test": "./node_modules/.bin/mocha -r ts-node/register test/*.ts"
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/*.ts",
+    "build": "./node_modules/.bin/rollup -c rollup.config.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +32,12 @@
   },
   "homepage": "https://github.com/charlyzeng/promise-queue-runner#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1",
+    "@rollup/plugin-babel": "^5.0.3",
+    "@rollup/plugin-node-resolve": "^8.0.1",
     "@types/chai": "^4.2.11",
     "@types/mocha": "^7.0.2",
     "@typescript-eslint/eslint-plugin": "^3.2.0",
@@ -33,6 +45,8 @@
     "chai": "^4.2.0",
     "eslint": "^7.2.0",
     "mocha": "^6.2.3",
+    "rollup": "^2.16.1",
+    "rollup-plugin-babel": "^4.4.0",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },
