@@ -77,6 +77,7 @@ runner.addListener(
     console.log(results);
   }
 );
+runner.start();
 ```
 
 # License
