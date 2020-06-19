@@ -42,10 +42,12 @@ import Runner from 'promise-queue-runner';
 const promiseGenerators = [];
 for (let i = 0; i < 100; i += 1) {
   promiseGenerators.push(
-    new Promise((resolve, reject) => {
-      // do something
-      resolve('value');
-    })
+    () => new Promise(
+      (resolve, reject) => {
+        // do something
+        resolve('value');
+      }
+    )
   );
 }
 const runner = new Runner({
